@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+/** Titillium**/
+.Header {
+  min-height: 40px;
+  background-color: purple;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  font-size: 2em;
+  font-family: 'Titillium Web', sans-serif; }
+
+/*# sourceMappingURL=index.css.map */
