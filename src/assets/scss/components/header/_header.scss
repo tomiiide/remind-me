@@ -6,4 +6,25 @@
     color: white;
     font-size: 2em;
     font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    form {
+        margin-left: 4%;
+        width: 72%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        input[name='remind'] {
+            width: 80%;
+            background: transparent;
+            border: 0;
+            color: white;
+            border-bottom: 2px solid white;
+            &::-webkit-input-placeholder {
+                color: #cacaca;
+            }
+        }
+    }
 }

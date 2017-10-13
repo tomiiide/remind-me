@@ -4,10 +4,11 @@ class Header extends Component{
   render(){
     return (
       <div className="Header">
-        Reminder
-        <div>
-          <input type="text" placeholder="Remind me to call mom"/>
-        </div>       
+        <p>Remind Me</p>
+        <form action="" onSubmit="">
+          <input type="text" placeholder="to call mom this evening" name="remind"/>
+          <button type="submit" className="btn btn-white">Remind Me</button>
+          </form>
       </div>
     );
   };
