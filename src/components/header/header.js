@@ -7,7 +7,7 @@ class Header extends Component{
         <p>Remind Me</p>
         <form action="" onSubmit="">
           <input type="text" placeholder="to call mom this evening" name="remind"/>
-          <button type="submit" className="btn btn-white">Remind Me</button>
+          <button type="submit" className="btn btn-white">Go!</button>
           </form>
       </div>
     );
