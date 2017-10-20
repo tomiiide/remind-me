@@ -17,6 +17,7 @@ input {
     outline: none; }
 
 .btn {
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
   background: #eee;
   border: 0;
@@ -25,11 +26,10 @@ input {
   .btn:focus, .btn:hover {
     background: #eee;
     border: 0;
-    outline: none; }
+    outline: none;
+    transform: translateY(-1px); }
   .btn:hover {
     color: purple;
-    transform: translateY(-1px);
-    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: all 0.3s ease-in-out; }
 
@@ -56,7 +56,8 @@ input {
       background: transparent;
       border: 0;
       color: white;
-      border-bottom: 2px solid white; }
+      border-bottom: 2px solid white;
+      font-size: 16px; }
       .Header form input[name='remind']::-webkit-input-placeholder {
         color: #cacaca; }
     .Header form button[type='submit'] {
@@ -66,5 +67,15 @@ input {
       width: 100px;
       margin: 0 auto;
       cursor: pointer; }
+
+.reminder_card {
+  padding: 20px;
+  width: 50%;
+  box-shadow: 2px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  margin: 10px 20px; }
+
+.reminder_list {
+  display: flex;
+  flex-direction: row; }
 
 /*# sourceMappingURL=index.css.map */

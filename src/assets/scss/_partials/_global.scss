@@ -27,14 +27,14 @@ input {
         background: #eee;
         border: 0;
         outline: none;
+        transform: translateY(-1px);
     }
     &:hover {
         color: purple;
-        transform: translateY(-1px);
-        box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.5);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     background: #eee;
     border: 0;
