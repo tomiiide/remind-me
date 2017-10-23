@@ -7,6 +7,7 @@ class ReminderList extends Component{
     super(props);
     this.state = {
     };
+    this.buildList = this.buildList.bind(this);
   }
 
   buildList(){

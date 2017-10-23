@@ -5,11 +5,14 @@ class Header extends Component{
   constructor(props){
     super(props)
     this.state = {};
+    this.submitForm = this.submitForm.bind(this);
   }
+  
 
 submitForm(e){
   e.preventDefault();
-  console.log("form Submitted");
+  let remind  = e.target.children.remind;
+  this.props.onNewReminder(remind.value);
 }
 
   render(){

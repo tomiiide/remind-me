@@ -2,7 +2,8 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif; }
 
 html,
 body {
@@ -45,7 +46,9 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  top: 0; }
   .Header form {
     width: 100%;
     display: flex;
@@ -70,12 +73,15 @@ input {
 
 .reminder_card {
   padding: 20px;
-  width: 50%;
+  width: 90%;
   box-shadow: 2px 3px 20px 0px rgba(0, 0, 0, 0.3);
-  margin: 10px 20px; }
+  margin: 10px 20px;
+  float: left; }
 
+@media (min-width: 767px) {
+  .reminder_card {
+    width: 40%; } }
 .reminder_list {
-  display: flex;
-  flex-direction: row; }
+  margin-top: 200px; }
 
 /*# sourceMappingURL=index.css.map */
