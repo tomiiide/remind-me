@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/header/header';
 import ReminderList from './components/reminders/reminder-list';
 import Reminders from './reminders.json';
+import date from 'date.js';
 class App extends Component {
 
   constructor(props){
@@ -14,9 +15,18 @@ class App extends Component {
 
   
   processReminder(reminder){
+    if(!reminder) return;
+    let getDate = date(reminder);
+    let now = new Date();
+    
+    if(getDate <= now){
+      console.log("invalid");
+      return;
+    }
+    
     var processed = {
       details : reminder,
-      due : ''
+      due : getDate
     };
     let current_reminders = this.state.reminders;
     current_reminders.push(processed);

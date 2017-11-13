@@ -13,9 +13,10 @@ submitForm(e){
   e.preventDefault();
   let remind  = e.target.children.remind;
   this.props.onNewReminder(remind.value);
+  remind.value = '';
 }
 
-  render(){
+render(){
     return (
       <div className="Header">
         <p>Remind Me</p>
